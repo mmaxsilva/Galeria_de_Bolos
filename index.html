@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Bolos</title>
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="link/style.css">
+</head>
+<body>
+    <h1>Galeria de Bolos</h1>
+    <div class="galeria">
+        <div class="carrossel">
+
+            <input type="radio" name="radio_btn" id="radio1">
+            <input type="radio" name="radio_btn" id="radio2">
+            <input type="radio" name="radio_btn" id="radio3">
+            <input type="radio" name="radio_btn" id="radio4">
+            <input type="radio" name="radio_btn" id="radio5">
+            <input type="radio" name="radio_btn" id="radio6">
+            <input type="radio" name="radio_btn" id="radio7">
+            <input type="radio" name="radio_btn" id="radio8">
+            <input type="radio" name="radio_btn" id="radio9">
+
+            <div onclick="openModal()" class="slide capa"><img src="midia/imagem1.webp" alt="imagem1"></div>
+            <div onclick="openModal()" class="slide two"><img src="midia/imagem2.jpg" alt="imagem2"></div>
+            <div onclick="openModal()" class="slide three"><img src="midia/imagem3.jpg" alt="imagem3"></div>
+            <div onclick="openModal()" class="slide four"><img src="midia/imagem4.jpg" alt="imagem4"></div>
+            <div onclick="openModal()" class="slide five"><img src="midia/imagem5.jpg" alt="imagem5"></div>
+            <div onclick="openModal()" class="slide six"><img src="midia/imagem6.jpg" alt="imagem6"></div>
+            <div onclick="openModal()" class="slide seven"><img src="midia/imagem7.jpg" alt="imagem7"></div>
+            <div onclick="openModal()" class="slide eigth"><img src="midia/imagem8.jpg" alt="imagem8"></div>
+            <div onclick="openModal()" class="slide nine"><img src="midia/imagem9.jpg" alt="imagem9"></div>
+
+            <div class="auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+                <div class="auto-btn9"></div>
+            </div>
+        </div>
+
+        <div class="manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+            <label for="radio9" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <div class="modal-conteiner" id="modal-conteiner">
+       <div class="modal" id="modal">
+         <button class="close" id="close">X</button>
+         <img class="modal-img" id="modal-img">
+        </div>
+    </div>
+
+    <script src="link/script.js"></script>
+</body>
+</html>
